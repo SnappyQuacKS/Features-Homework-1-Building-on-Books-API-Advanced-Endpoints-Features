@@ -8,7 +8,6 @@ A simple Spring Boot REST API for managing a collection of books, supporting **p
 
 - **Retrieve books with pagination.**
 - **Retrieve books with filtering, sorting, and pagination.**
-- **Get a book by its ID.**
 - **Update a book entirely.**
 - **Partially update a book.**
 - **Delete a book by its ID.**
@@ -26,11 +25,7 @@ GET /books/pagination
 ```http
 GET /books/advanced
 ```
-### 3. Get Books by ID from the list
-```http
-GET /books/{id}
-```
-### 4. Update book entirely from the list
+### 3. Update book entirely from the list
 ```http
 PUT /books/{id}
 
@@ -41,7 +36,7 @@ when updating the book make sure the body in postman is filled something like
 "price": "9.0"
 }
 ```
-### 3. Partially update a book from the list
+### 4. Partially update a book from the list
 ```http
 PATCH /books/{id}
 
@@ -52,6 +47,6 @@ when updating the book make sure the body in postman is filled something like
 "price": "9.0"
 }
 ```
-### 4. Delete a book from the list
+### 5. Delete a book from the list
 ```http
 DELETE /books/{id}
